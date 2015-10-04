@@ -91,9 +91,7 @@ defaults write com.apple.dock autohide -bool true
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-
-
-# Safari: leere Startseite, Devug- und Dev-Menue
+# Safari: leere Startseite, Debug- und Dev-Menue
 defaults write com.apple.Safari HomePage -string "about:blank"
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -114,6 +112,13 @@ defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
 # 'Sichere' Downloads nicht automatisch öffnen
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# Zeittone setzen
+sudo systemsetup -settimezone "Europe/Berlin" > /dev/null
+
+
+
+
 
 
 
